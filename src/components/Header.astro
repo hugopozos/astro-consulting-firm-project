@@ -3,36 +3,39 @@ import HeaderButton from "./HeaderButton.astro";
 console.log('javascript');
 ---
 
-<header class="bg-zinc-950 py-8 px-4 border-b border-black mx-auto w-screen lg:py-8 lg:px-6">
-    <nav class="container flex flex-col items-center justify-between max-w-screen-xl mx-auto text-center 
+<header class="border-b border-zinc-50/10 bg-zinc-950">
+    <div class="py-8 px-4 max-w-screen-xl mx-auto lg:py-8 lg:px-6 text-sm">
+        <nav class="container flex flex-col items-center justify-between text-center 
         md:flex-row">
 
-        <!-- Logo -->
-        <div class="order-0">
-            <a href="/" class="text-zinc-100 font-extrabold text-2xl">
-                NeoDigital
-            </a>
-        </div>
-
-        <!-- Navigation -->
-        <div class="flex items-center lg:order-1">
-            <HeaderButton href="/">Inicio</HeaderButton>
-            <HeaderButton href="/proyectos">Proyectos</HeaderButton>
-            <HeaderButton href="/nosotros">Nosotros</HeaderButton>
-            <HeaderButton href="/blog">Blog</HeaderButton>
-        </div>
-
-        <!-- Contacts  -->
-        <div class="flex items-center lg:order-2">
-            <div class="flex">
-
+            <!-- Logo -->
+            <div class="order-0">
+                <a href="/" class="text-zinc-100 font-extrabold text-xl lowercase">
+                    NeoDigital 💻
+                </a>
             </div>
-            <a class="hover:shadow-outline rounded-[50px] border-[1.8px] border-white bg-zinc-950 px-8 py-2 text-zinc-100
-            drop-shadow-lg transition duration-300 ease-in-out hover:border-zinc-100 hover:bg-zinc-100 hover:text-zinc-950 hover:drop-shadow-xl" 
-                href="/contacto"
-                >
-                Contacto
-            </a>
-        </div>
-    </nav>
+
+            <!-- Navigation -->
+            <div class="flex items-center lg:order-1">
+                <HeaderButton href="/">Inicio</HeaderButton>
+                <HeaderButton href="/proyectos">Proyectos</HeaderButton>
+                <HeaderButton href="/nosotros">Nosotros</HeaderButton>
+                <HeaderButton href="/blog">Blog</HeaderButton>
+            </div>
+
+            <!-- Contacts  -->
+            <div class="flex items-center lg:order-2">
+                <div class="flex">
+
+                </div>
+                <a class="hover:shadow-outline rounded-[50px] border-[1.8px] border-white bg-zinc-950 px-8 py-1 text-zinc-100
+                drop-shadow-lg transition duration-300 ease-in-out hover:border-zinc-100 hover:bg-zinc-100 hover:text-zinc-950 hover:drop-shadow-xl" 
+                    href="/contacto"
+                    >
+                    Contacto
+                </a>
+            </div>
+        </nav>
+    </div>
+
 </header>

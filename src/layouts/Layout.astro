@@ -18,9 +18,9 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body class="min-h-screen pb-32">
-		<Header />
-		<main class="max-w-5xl px-4 m-auto">
+	<body class="min-h-screen pb-32 font-poppins">
+		<Header/>
+		<main>
 			<slot />
 		</main>
 	</body>
@@ -32,4 +32,5 @@ const { title } = Astro.props;
 		background-size: 224px;
 		color-scheme: light dark;
 	}
+
 </style>
