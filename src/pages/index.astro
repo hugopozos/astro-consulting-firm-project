@@ -1,27 +1,64 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
+import Terminal from '../components/Terminal.astro';
 ---
 
 <Layout title="NeoDigital">
-	<section class="bg-zinc-950 h-screen">
-		<div class="container max-w-screen-xl mx-auto px-4 py-8 lg:px-6 lg:py-8">
-			<div class="grid grid-cols-1 gap-8 lg:grid-cols-2 py-36 items-center">
-				<div class="flex flex-col">
-					<h1 class="text-sm text-zinc-50/90 pb-2">Las mejores soluciones fintech que existen en el mercado</h1>
-					<p class="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 bg-clip-text font-extrabold text-transparent text-5xl">
-						Si lo puedes imaginar.
-						<span class="sm:block">Lo podemos programar. </span>
+	
+	<section class="antialiased bg-gradient-to-br from-zinc-950 via-black to-gray-800 h-screen">
+		<div class="container max-w-screen-xl mx-auto max-h-screen px-4 py-8 lg:px-6 lg:py-32">
+			<div class="items-center">
+				<div class="container px-6 mx-auto md:text-center md:px-4">
+					<h1 class="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl md:text-6xl xl:text-7xl">
+						<span class="block">Empieza a dar forma</span> 
+						<span class="relative inline-block mt-3 text-white">a 
+							<span class="underline underline-offset-3 decoration-5 decoration-green-500">
+								tu próximo gran proyecto
+							</span>
+						</span>
+					</h1>
+					<p class="mx-auto mt-1 text-sm text-left text-gray-200 md:text-center md:mt-6 sm:text-base md:max-w-2xl md:text-lg xl:text-xl">
+						Revolucionamos la forma en que tus clientes interactúan con la tecnología.
 					</p>
 				</div>
 				
-				<!-- Deberia ser mas grande y animada -->
-				<img src="/public/code-illustration.png" alt="example" class="shadow-xl shadow-zinc-50/10">
-				
+				<div class="block mt-16 w-3/4 mx-auto">
+					<Terminal />
+				</div>
+		
 			</div>
 		</div>
 	</section>
-	
-	
+
+	<section class="bg-red-100 py-12">
+		<div class="text-zinc-950 text-center">
+			SECCIÓN DE VALIDACIÓN SOCIAL
+		</div>
+	</section>
+
+	<section class="bg-blue-100 py-12">
+		<div class="text-zinc-950 text-center">
+			PROBLEMAS DEL CLIENTE
+		</div>
+	</section>
+
+	<section class="bg-green-100 py-12">
+		<div class="text-zinc-950 text-center">
+			SOLUCIONES AL CLIENTE
+		</div>
+	</section>
+
+	<section class="bg-purple-100 py-12">
+		<div class="text-zinc-950 text-center">
+			TESTIMONIOS
+		</div>
+	</section>
+
+	<section class="bg-yellow-100 py-12">
+		<div class="text-zinc-950 text-center">
+			CALL TO ACTION
+		</div>
+	</section>
+
 </Layout>
 
