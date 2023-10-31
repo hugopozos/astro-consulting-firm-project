@@ -1,6 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Terminal from '../components/Terminal.astro';
+import ColumnChart from '../components/ColumnChart.astro';
+import Testimonials from '../components/Testimonials.astro';
 ---
 
 <Layout title="NeoDigital">
@@ -8,21 +10,23 @@ import Terminal from '../components/Terminal.astro';
 	<section class="antialiased bg-gradient-to-br from-zinc-950 via-black to-gray-800 h-screen">
 		<div class="container max-w-screen-xl mx-auto max-h-screen px-4 py-8 lg:px-6 lg:py-32">
 			<div class="items-center">
-				<div class="container px-6 mx-auto md:text-center md:px-4">
+				<div class="container px-6 mx-auto md:text-center md:px-4 slide-right">
 					<h1 class="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl md:text-6xl xl:text-7xl">
-						<span class="block">Empieza a dar forma</span> 
-						<span class="relative inline-block mt-3 text-white">a 
+						<span class="block" >Empieza tu</span> 
+						
+						<span class="relative inline-block mt-3 text-white">
 							<span class="underline underline-offset-3 decoration-5 decoration-green-500">
-								tu próximo gran proyecto
+								próximo gran proyecto
 							</span>
 						</span>
 					</h1>
+					
 					<p class="mx-auto mt-1 text-sm text-left text-gray-200 md:text-center md:mt-6 sm:text-base md:max-w-2xl md:text-lg xl:text-xl">
 						Revolucionamos la forma en que tus clientes interactúan con la tecnología.
 					</p>
 				</div>
 				
-				<div class="block mt-16 w-3/4 mx-auto">
+				<div class="block mt-16 w-3/4 mx-auto slide-top">
 					<Terminal />
 				</div>
 		
@@ -30,28 +34,161 @@ import Terminal from '../components/Terminal.astro';
 		</div>
 	</section>
 
-	<section class="bg-red-100 py-12">
-		<div class="text-zinc-950 text-center">
-			SECCIÓN DE VALIDACIÓN SOCIAL
+	<section class="bg-gray-100 relative z-1">
+		<div class="max-w-screen-xl px-4 py-8 mx-auto sm:px-6 lg:py-8 lg:px-6">
+			<div class="grid grid-cols-2 gap-8 md:grid-cols-5 lg:grid-cols-4">
+				<div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
+					<div class="text-center text-zinc-950">
+						<div class="text-3xl font-extrabold">2</div>
+						<div class="text-xl">años de experiencia</div>
+					</div>
+				</div>
+				<div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
+					<div class="text-center text-zinc-950">
+						<div class="text-3xl font-extrabold">50+</div>
+						<div class="text-xl">proyectos exitosos</div>
+					</div>
+				</div>
+				<div class="flex items-center justify-center col-span-1 md:col-span-2 lg:col-span-1">
+					<div class="text-center text-zinc-950">
+						<div class="text-3xl font-extrabold">25+</div>
+						<div class="text-xl">clientes sastifechos</div>
+					</div>
+				</div>
+				<div class="flex items-center justify-center col-span-1 md:col-span-3 lg:col-span-1">
+					<div class="text-center text-zinc-950">
+						<div class="text-3xl font-extrabold">24/7</div>
+						<div class="text-xl">soporte</div>
+					</div>				
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<section class="bg-blue-100 py-12">
-		<div class="text-zinc-950 text-center">
-			PROBLEMAS DEL CLIENTE
+	<section class="bg-white pt-12 relative z-1">
+		<div class="max-w-screen-xl mx-auto text-zinc-950 lg:py-8 lg:px-6">
+			<div class="flex flex-wrap items-center sm:-mx-3">
+				<div class="w-full md:w-1/2 md:px-3">
+					<div class="w-full pb-6 space-y-6 sm:max-w-md lg:max-w-lg md:space-y-4 lg:space-y-3 xl:space-y-3 sm:pr-5 lg:pr-0 md:pb-0">
+						<h1 class="font-semibold text-xs tracking-widest uppercase text-emerald-400">
+							Tu proyecto es nuestra prioridad
+						</h1>
+						<h4 class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-4xl lg:text-5xl">
+						  <span class="block xl:inline">Convertimos tu idea </span>
+						  en un <span class="block text-emerald-400 xl:inline" data-primary="indigo-600">proyecto de impacto</span>
+						</h4>
+						<p class="mx-auto text-base text-zinc-900 leading-8 sm:max-w-md lg:text-lg md:max-w-3xl">
+							¿Necesitas ayuda para llevar a cabo tu software? Nosotros podemos ayudarte a diseñar, construir y acelerar el ciclo de vida del software. Utilizamos las mejores herramientas y tecnologías para crear soluciones de software de alta calidad.
+						</p>
+					</div>
+				</div>
+				<div class="w-full md:w-1/2">
+					<ColumnChart />
+				</div>
+			</div>
 		</div>
 	</section>
 
-	<section class="bg-green-100 py-12">
-		<div class="text-zinc-950 text-center">
-			SOLUCIONES AL CLIENTE
-		</div>
+	<section class="bg-white py-12">
+		<div class="flex flex-col-reverse md:flex-row items-center">
+			<!-- Column 1 -->
+			<div class="w-full md:w-1/2 relative p-6">
+			  	<!-- Feature -->
+			  	<div class="relative w-full max-w-sm mx-auto space-y-4">
+					<!-- Background shape -->
+					<div class="absolute top-0 -left-10 ptablet:-left-32 h-[400px] w-[400px] rotate-45 mask mask-hexed bg-zinc-50 z-0"></div>
+					<!-- Item 1 -->
+					<div class="relative -left-8 ptablet:-left-16 z-10 w-full p-5 rounded-xl bg-white border border-muted-200 shadow-xl shadow-muted-400/10">
+						<div class="flex gap-4">
+							<div class="w-14 h-14 bg-black flex items-center justify-center rounded-lg">
+								<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24"><path fill="#19d79b" d="M2.5 17.6A3.4 3.4 0 0 0 5.9 21H7v-2H5.9a1.4 1.4 0 0 1-1.4-1.4V14c0-.768-.288-1.47-.764-2c.476-.53.764-1.232.764-2V6.4A1.4 1.4 0 0 1 5.9 5H7V3H5.9a3.4 3.4 0 0 0-3.4 3.4V10a1 1 0 0 1-1 1H.4v2h1.1a1 1 0 0 1 1 1v3.6ZM17 21h1.1a3.4 3.4 0 0 0 3.4-3.4V14a1 1 0 0 1 1-1h1.1v-2h-1.1a1 1 0 0 1-1-1V6.4A3.4 3.4 0 0 0 18.1 3H17v2h1.1a1.4 1.4 0 0 1 1.4 1.4V10c0 .768.288 1.47.764 2a2.989 2.989 0 0 0-.764 2v3.6a1.4 1.4 0 0 1-1.4 1.4H17v2Z"/></svg>
+							</div>
+							<div class="w-3/4">
+								<h4 class="font-heading font-medium text-zinc-900">
+									Desarrollo de software
+								</h4>
+								<p class="font-sans text-sm text-zinc-900">
+									Soluciones a la medida de tus necesidades.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- Item 2 -->
+					<div class="relative -right-8 ptablet:right-0 z-10 w-full p-5 rounded-xl bg-white border border-muted-200 shadow-xl shadow-muted-400/10">
+						<div class="flex flex-row-reverse gap-4">
+							<div class="w-14 h-14 bg-black flex items-center justify-center rounded-lg">
+								<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24"><path fill="#19d79b" d="M12 3a9 9 0 0 0-9 9c0 2.397.935 4.573 2.463 6.186l.504.532L4.7 21H12a9 9 0 1 0 0-18ZM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11s-4.925 11-11 11H1.3l2.22-3.994A10.959 10.959 0 0 1 1 12Zm7-3h8v2H8V9Zm0 4h6v2H8v-2Z"/></svg>
+							</div>					
+							<div class="w-3/4">
+								<h4 class="font-heading font-medium text-zinc-900">
+									Atención al cliente
+								</h4>
+								<p class="font-sans text-sm text-zinc-900">
+									Servicio de soporte para productos desarrollados.
+								</p>
+							</div>
+						</div>
+					</div>
+				<!-- Item 3 -->
+				<div class="relative -left-8 ptablet:-left-16 z-10 w-full p-5 rounded-xl bg-white border border-muted-200 shadow-xl shadow-muted-400/10">
+					<div class="flex gap-4">
+						<div class="w-14 h-14 bg-black flex items-center justify-center rounded-lg">
+							<svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8" viewBox="0 0 24 24"><path fill="#19d79b" d="m12 .834l6.372 3.823l-1.029 1.715L17 6.166V8h5v14H2V8h5V6.166l-.343.206l-1.029-1.715L12 .834ZM9 4.966V8h6V4.966l-3-1.8l-3 1.8Zm2 .032h2.004v2.004H11V4.998ZM4 10v10h4v-7h8v7h4V10H4Zm10 10v-5h-4v5h4Z"/></svg>
+						</div>
+						<div class="w-3/4">
+							<h4 class="font-heading font-medium text-zinc-900">
+								Legal
+							</h4>
+							<p class="font-sans text-sm text-zinc-900 ">
+								Te ayudamos con la constitución de tu empresa así como cualquier otro tramite necesario.
+							</p>
+						</div>
+					</div>
+				</div>
+
+			  </div>
+			</div>
+			<!-- Column 2 -->
+			<div class="w-full md:w-1/2 relative p-6">
+			  <!-- Section content -->
+			  <div class="w-full max-w-lg space-y-3">
+				<!-- Badge -->
+				<h1 class="font-semibold text-xs tracking-widest uppercase text-emerald-400">
+				  Las mejores practicas
+				</h1>
+				<!-- Title -->
+				<h2 class="text-4xl text-zinc-900 font-extrabold tracking-tight lg:text-5xl">
+				  Conoce todos 
+				  <span class="block">nuestros servicios</span>
+				</h2>
+				<!-- Subtitle -->
+				<p class="mx-auto text-base text-zinc-900 leading-8 sm:max-w-md lg:text-lg md:max-w-3xl">
+					Te damos la posibilidad de crear tu software a la medida, con las mejores tecnologías y herramientas del mercado.
+				</p>
+			  </div>
+			</div>
+		  </div>
 	</section>
 
-	<section class="bg-purple-100 py-12">
-		<div class="text-zinc-950 text-center">
-			TESTIMONIOS
-		</div>
+	<section class="bg-white py-12">
+		<div class="max-w-screen-xl mx-auto text-zinc-950 lg:py-8 lg:px-6">
+			<div class="container flex flex-col items-start lg:items-center">
+				<p class="relative flex items-start justify-start w-full text-md font-bold tracking-wider text-emerald-400 uppercase lg:justify-center lg:items-center">No te quedes solo con nuestra palabra</p>
+				<h2 class="relative flex items-start justify-start w-full max-w-4xl text-4xl font-bold lg:justify-center">
+					<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="absolute right-0 hidden w-12 h-12 -mt-2 -mr-16 text-gray-200 lg:inline-block"
+					viewBox="0 0 975.036 975.036">
+					<path
+						d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+					</path>
+				</svg>
+					Mira lo que dicen nuestros clientes
+				</h2>
+				<div class="block w-full h-0.5 max-w-lg mt-6 bg-emerald-100 rounded-full"></div>
+
+				<Testimonials />
+
+			</div>
+		</div>	
 	</section>
 
 	<section class="bg-yellow-100 py-12">
@@ -60,5 +197,7 @@ import Terminal from '../components/Terminal.astro';
 		</div>
 	</section>
 
+
+	
 </Layout>
 

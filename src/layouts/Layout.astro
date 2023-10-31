@@ -17,6 +17,8 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 	</head>
 	<body class="min-h-screen pb-32 font-poppins">
 		<Header/>
@@ -32,5 +34,8 @@ const { title } = Astro.props;
 		background-size: 224px;
 		color-scheme: light dark;
 	}
+
+	.slide-right{animation:slide-right .6s ease-in-out both}@keyframes slide-right{0%{transform:translateX(-100px);opacity:0}100%{transform:translateX(0);opacity:1}}
+	.slide-top{animation:slide-top .8s ease-in-out 0.4s both}@keyframes slide-top{0%{transform:translateY(100px);opacity:0}100%{transform:translateY(0);opacity:1}}
 
 </style>
